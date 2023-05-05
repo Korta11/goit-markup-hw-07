@@ -1295,6 +1295,9 @@ textarea {
   justify-content: space-between;
   transform: translateX(0);
 }
+.mob-addres {
+  margin-bottom: 48px;
+}
 @media screen and (min-width: 768px) {
   .mob-nav-list {
     display: none;
