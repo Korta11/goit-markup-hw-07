@@ -1389,7 +1389,7 @@ textarea {
 }
 .mob-number {
   text-decoration: none;
-  font-size: 36px;
+  font-size: calc((100vw - 320px) / (430 - 320) * (36 - 20) + 20px);
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.01em;
@@ -1397,6 +1397,12 @@ textarea {
   color: #4d5ae5;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 428px) {
+  .mob-number {
+    font-size: 36px;
+  }
+}
+
 .mob-number:hover,
 .mob-number:focus {
   color: #404bbf;
